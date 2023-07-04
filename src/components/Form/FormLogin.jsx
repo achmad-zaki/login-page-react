@@ -57,7 +57,7 @@ const FormLogin = () => {
             <FormInput className="mt-4">
                 <Label htmlFor="password">Password</Label>
                 <Input
-                    type="text"
+                    type="password"
                     name="password"
                     placeholder="Your password"
                     register={register}
