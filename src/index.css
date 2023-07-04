@@ -1,0 +1,36 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* SF Pro Rounded */
+@font-face {
+    font-family: "SF-pro-rounded";
+    src: url("./fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf");
+}
+
+/* SF Pro Display */
+@font-face {
+    font-family: "SF-pro-regular";
+    src: url("./fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+@layer base {
+    body {
+        @apply font-roboto bg-white
+    }
+    label {
+        @apply tracking-[0.14px]
+    }
+}
+
+@layer utilities {
+    .btn-primary {
+        @apply text-white bg-[#162D3A] rounded-xl p-[14px] tracking-[0.16px] w-full
+    }
+    .btn-sosmed {
+        @apply text-[#313957] text-base tracking-[0.16px] rounded-xl bg-[#F3F9FA] p-3 w-full
+    }
+}
